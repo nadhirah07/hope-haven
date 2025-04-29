@@ -1,0 +1,28 @@
+#calendar {
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#calendar table {
+    width: 100%;
+    text-align: center;
+}
+
+#calendar th {
+    background: #007bff;
+    color: white;
+    padding: 5px;
+}
+
+#calendar td {
+    padding: 5px;
+    cursor: pointer;
+}
+
+#calendar td:hover {
+    background: #f0f0f0;
+}

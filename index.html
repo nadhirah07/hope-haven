@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity & Fundraising</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="validation.js"></script>
+    <link rel="stylesheet" href="CalendarControl.css"> 
+    <script src="CalendarControl.js" language="javascript"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="images/logo.png" alt="Hope Haven Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="#about">About Us</a></li>
+                            <li><a class="dropdown-item" href="#mission">Mission</a></li>
+                            <li><a class="dropdown-item" href="#vision">Vision</a></li>
+                            <li><a class="dropdown-item" href="#leadership">Leadership</a></li>
+                            <li><a class="dropdown-item" href="#gallery-preview">Gallery</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="campaignsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Campaigns
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="campaignsDropdown">
+                            <li><a class="dropdown-item" href="#food-drive">Food Drive</a></li>
+                            <li><a class="dropdown-item" href="#education-fund">Education Fund</a></li>
+                            <li><a class="dropdown-item" href="#elderly-care">Elderly Care</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#get-involved">Get Involved</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   	<!-- Home section -->
+       <section id="home" class="welcome">
+        <div class="welcome-content">
+            <h1 style="color:white;">Welcome to Hope Haven</h1>
+            <p style="color:white;">We are dedicated to helping those in need through various fundraising campaigns and donation programs.</p>
+            <a href="#get-involved" class="contact-button">Donate Now</a>
+        </div>
+    </section>
+	<!-- About Us section -->
+    <section id="about" class="about-us">
+        <h2>About Us</h2>
+		<div class="about-info">
+        <table>
+            <tr>
+                <td><img src="images/about.png"></td>
+                <td>
+                    <p>We are a charity organization dedicated to helping those in need. Through various fundraising campaigns and donation programs, we aim to build a more caring and compassionate community.</p>
+                    <p>Hope Haven was established in 2020 with the mission of providing aid to those in need, including orphans, the elderly, and underprivileged families.</p>
+                </td>
+            </tr>
+            <tr id="mission" class="mission-about">
+                <td>
+                    <h3>Mission</h3>
+                    <p><b>To support communities through sustainable initiatives.</b></p>
+                    <p>We strive to empower individuals by offering education, healthcare, and shelter assistance, ensuring that no one is left behind. Our mission is to inspire kindness and bring positive change to society, one step at a time.</p>
+                </td>
+                <td><img src="images/mission.png"></td>
+            </tr>
+            <tr id="vision" class="vision-about">
+                <td><img src="images/vision.jpg"></td>
+                <td>
+                    <h3>Vision</h3>
+                    <p><b>To create a better world through volunteerism and compassion.</b></p>
+                    <p>We envision a society where generosity and support drive sustainable change, fostering a culture of giving that uplifts underprivileged communities. Our long-term goal is to expand globally, reaching those in need beyond borders.</p>
+                </td>
+            </tr>
+        </table>
+        <div id="leadership" class="leadership">
+            <h3>Our Leadership</h3>
+            <div class="leadership-info">
+                <div class="leader">
+                    <img src="images/suhana.png" alt="Founder" class="leader-photo">
+                    <h4>SITI SUHANA BINTI MD MEHADI HASSAN</h4>
+                    <p><b>Founder</b></p>
+                    <p>Suhana established Hope Haven in 2025 with a vision to create a compassionate and supportive community for those in need.</p>
+                </div>
+                <div class="leader">
+                    <img src="images/nisa.png" alt="Chairman" class="leader-photo">
+                    <h4>NUR NADHIRAH NISA BINTI MOHAMAD ALIAS</h4>
+                    <p><b>Chairman</b></p>
+                    <p>Nisa oversees the strategic direction of Hope Haven, ensuring its mission aligns with community needs.</p>
+                </div>
+                <div class="leader">
+                    <img src="images/khayal.png" alt="Executive Director" class="leader-photo">
+                    <h4>KHAYALVILI A/P SELVAN </h4>
+                    <p><b>Dedicated Team</b></p>
+                    <p>Khayalvili manages the day-to-day operations of Hope Haven, leading our dedicated team to implement impactful programs and ensure the charity's success.</p>
+                </div>
+            </div>
+		</div>
+        </section>
+        <!-- Gallery section -->    
+        <section id="gallery-preview" class="gallery-preview">
+            <h2 style="text-align: center;">Our Gallery </h2>
+            <p style="text-align: center;">Explore moments from our charity events and campaigns.</p>
+            <div class="gallery-container">
+                <!-- Thumbnails -->
+                <img src="images/gallery1.jpg" alt="Gallery Image 1" class="thumbnail" onclick="openModal('images/gallery1.jpg')">
+                <img src="images/gallery2.jpg" alt="Gallery Image 2" class="thumbnail" onclick="openModal('images/gallery2.jpg')">
+                <img src="images/gallery3.jpg" alt="Gallery Image 3" class="thumbnail" onclick="openModal('images/gallery3.jpg')">
+                <img src="images/gallery4.jpg" alt="Gallery Image 4" class="thumbnail" onclick="openModal('images/gallery4.jpg')">
+            </div>
+
+            <!-- Modal -->
+            <div id="galleryModal" class="modal">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img class="modal-content" id="modalImage">
+                <div id="caption"></div>
+                <!-- Navigation buttons -->
+                <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+                <a class="next" onclick="changeImage(1)">&#10095;</a>
+            </div>
+        </section>
+<br>
+<script>
+        // Array to store image sources
+        const images = [
+            "images/gallery1.jpg",
+            "images/gallery2.jpg",
+            "images/gallery3.jpg",
+            "images/gallery4.jpg"
+        ];
+        let currentIndex = 0;
+
+        // Open the modal and display the clicked image
+        function openModal(imageSrc) {
+            const modal = document.getElementById("galleryModal");
+            const modalImage = document.getElementById("modalImage");
+            const caption = document.getElementById("caption");
+
+            modal.style.display = "flex";
+            modalImage.src = imageSrc;
+            currentIndex = images.indexOf(imageSrc); // Set the current index
+            caption.innerHTML = ""; // Leave the caption empty or set a custom message
+        }
+        
+        // Close the modal
+        function closeModal() {
+            const modal = document.getElementById("galleryModal");
+            modal.style.display = "none";
+        }
+
+        // Change the image (Next/Previous)
+        function changeImage(direction) {
+            currentIndex += direction;
+
+            // Wrap around if at the beginning or end
+            if (currentIndex < 0) {
+                currentIndex = images.length - 1;
+            } else if (currentIndex >= images.length) {
+                currentIndex = 0;
+            }
+
+            // Update the modal image
+            const modalImage = document.getElementById("modalImage");
+            modalImage.src = images[currentIndex];
+        }
+</script>
+<br>	
+
+    <!-- Campaigns section -->
+    <section id="campaigns" class="campaigns">
+        <h2 style="color:white;">Our Campaigns</h2>
+		<p style="color:white;">We run a variety of impactful campaigns designed to uplift communities and provide necessary aid. Our initiatives focus on food security, education, elderly care, and disaster relief efforts. Below are some of our key campaigns:</p>
+        <div class="campaign-list">
+            <section id="food-drive" class="campaign-item">
+                <h3>Food Drive</h3>
+				<p><b>Help us provide food for underprivileged families.</b></p>
+				<p>We collaborate with local food suppliers, supermarkets, and volunteers to collect, package, and distribute food items to those in need.</p>
+			
+                <div class="slideshow-container">
+                    <div class="slideindex1">
+                        <img src="images/foodrive.jpg" style="width:100%">
+                    </div>
+                    <div class="slideindex1">
+                        <img src="images/handgiven.jpg" style="width:100%">
+                    </div>
+                    <div class="slideindex1">
+                        <img src="images/FoodGiven.jpg" style="width:100%">
+                    </div>
+                </div>
+            </section>
+
+            <section id="education-fund" class="campaign-item">
+                <h3>Education Fund</h3>
+                <p><b>Support education for children in need.</b></p>
+				<p>We also partner with educators and institutions to create sustainable learning opportunities for children from low-income backgrounds.</p>
+
+                <div class="slideindex2">
+                    <img src="images/educationfund.jpg" style="width:100%">
+                </div>
+                <div class="slideindex2">
+                    <img src="images/kiddrawing.jpg" style="width:100%">
+                </div>
+                <div class="slideindex2">
+                    <img src="images/kidsreading.jpg" style="width:100%">
+                </div>
+            </section>
+			
+            <section id="elderly-care" class="campaign-item">
+                <h3>Elderly Care</h3>
+                <p><b>Provide care and support for the elderly.</b></p>
+				<p>Through community-driven efforts, we organize visits to elder care homes, provide medical aid, and host social gatherings to keep them engaged and cared for.</p>
+
+                <div class="slideindex3">
+                    <img src="images/elderlycare.jpg" style="width:100%">
+                </div>
+                <div class="slideindex3">
+                    <img src="images/eldercareservice.jpg" style="width:100%">
+                </div>
+                <div class="slideindex3">
+                    <img src="images/eldercare.jpg" style="width:100%">
+                </div>
+            </section>
+            
+            <script>
+                var slideindex1 = 0;
+                var slideindex2 = 0;
+                var slideindex3 = 0;
+            function showSlides1() {
+                var i;
+                var slides = document.getElementsByClassName("slideindex1");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideindex1++;
+                if (slideindex1 > slides.length) { slideindex1 = 1 }
+                slides[slideindex1 - 1].style.display = "block";
+                setTimeout(showSlides1, 2000); // Change every 2 seconds
+            }
+
+            function showSlides2() {
+                var i;
+                var slides = document.getElementsByClassName("slideindex2");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideindex2++;
+                if (slideindex2 > slides.length) { slideindex2 = 1 }
+                slides[slideindex2 - 1].style.display = "block";
+                setTimeout(showSlides2, 2000);
+            }
+
+            function showSlides3() {
+                var i;
+                var slides = document.getElementsByClassName("slideindex3");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideindex3++;
+                if (slideindex3 > slides.length) { slideindex3 = 1 }
+                slides[slideindex3 - 1].style.display = "block";
+                setTimeout(showSlides3, 2000);
+            }
+
+                // Start all carousels
+                showSlides1();
+                showSlides2();
+                showSlides3();
+            
+             </script>
+
+    </section>
+	<!-- Get involved section -->
+    <section id="get-involved" class="get-involved">
+        <h2>Get Involved</h2>
+        <p><b>Join us in making a difference. Volunteer, donate, or spread the word about our cause.</b></p>
+        <div class="join-list">
+            <div class="join">
+                <img src ="images/Volunteer.jpg">
+                <h3 >Volunteering</h3>
+                <p>Whether you're passionate about helping the community, protecting the environment, or assisting those in need, your time and effort can create a lasting impact.</p>
+                <li>Participate in local events and outreach programs.</li>
+                <li>Help with administrative tasks and fundraising.</li> 
+                <li>Offer your skills.</li>
+                <li>Assist in organizing donation drives and awareness campaigns.</li>
+                <a href="GetInvolvedContent/Volunteer.html" class="learn-more">Learn More</a>
+            </div>
+            <div class="join">
+                <img src ="images/Donation.jpg">
+                <h3>Donations</h3>
+                <p>Every contribution, big or small, helps us continue our mission. Your donation can provide essential resources, support projects, and aid those in need.</p>
+                <li><b>One-time Donation</b> : Contribute any amount to support our cause.</li>
+                <li><b>Monthly Giving</b> : Set up a recurring donation to provide long-term impact.</li>   
+                <li><b>In-Kind Donations</b> : Donate food, clothing, books, or other supplies.</li>    
+                <li><b>Corporate Sponsorships</b> : Companies can contribute funds or resources.</li>
+                <a href="GetInvolvedContent/Donation.html" class="learn-more">Learn More</a>
+            </div>
+            <div class="join">
+                <img src ="images/handshake.jpg">
+                <h3 >Partnership</h3>
+                <p>Collaboration with organizations, businesses, and individuals helps us reach more people and create greater change.Partnering with us offers a meaningful way to give back to the community while promoting shared values. </p>
+                <li><b> Social Responsibility Initiatives </b>: Work with us on projects that align with your company's mission.
+                <li><b>Event Sponsorships </b>: Support fundraising events, campaigns, and community programs.</li>   
+                <li><b>Collaborative Programs</b>: Co-develop workshops, training, and awareness campaigns.</li>
+                <li><b>Skill-Based Support</b>: Provide expertise in IT, marketing, legal advice, or other areas.</li>
+                <a href="GetInvolvedContent/Partnership.html" class="learn-more">Learn More</a>
+            </div>
+        </div>
+        
+<br>     
+	<section id="donate" class="donation-form">
+		<b><h2>Make a Donation</h2></b>
+		<b><p>Your contribution helps us continue our mission. Thank you for your generosity!</p></b>
+		
+		<form onsubmit="return (validateDonation());">
+			<div class="form-group">
+				<b><label for="donor-name">Full Name:</label></b>
+				<input type="text" id="donor-name" name="donor-name">
+			</div>
+			
+			<div class="form-group">
+				<b><label for="donor-email">Email:</label></b>
+				<input type="email" id="donor-email" name="donor-email">
+			</div>
+            <div class ="form-group">
+                <b><label for="Date">Date:</label></b> 
+                <input id="donation-date" name="todays_date" onfocus="showCalendarControl(this);" type="text">
+            </div>
+        
+            <div class="form-group">
+				<b><label for="donation-amount">Donation Amount (RM):</label></b>
+				<input type="number" id="donation-amount" name="donation-amount" min="5">
+			</div>
+			
+			<div class="form-group">
+				<b><label for="payment-method">Payment Method:</label></b>
+				<select id="payment-method" name="payment-method">
+					<option value="">Select Payment Method</option>
+					<option value="credit-card">Credit Card</option>
+					<option value="paypal">PayPal</option>
+					<option value="bank-transfer">Bank Transfer</option>
+				</select>
+			</div>
+
+			<button type="submit" class="submit-button">Donate Now</button>
+		</form>
+	</section>
+
+    </section>
+	<!-- Contact Us section -->
+    <section id="contact" class="contact-us">
+        <h2 style="color: white;">Contact Us</h2>
+        <div class="contact-info">
+            <p>🏠 Address: No. 10, Jalan Kebajikan, Seberang Perai, Penang.</p>
+            <p>📞 Phone: +60 12-345 6789</p>
+            <p>📧 Email: hopehaven@gmail.com</p>
+        </div>
+        <form action="" name="myForm" onsubmit="return (validate());"> 
+            <div class="form-group">
+                <label for="full-name" style="color: white;">Full Name:</label>
+                <input type="text" id="full-name" name="fullname">
+            </div>
+            <div class="form-group">
+                <label for="email" style="color: white;">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="subject" style="color: white;">Subject:</label>
+                <input type="text" id="subject" name="subject">
+            </div>
+            <div class="form-group">
+                <label for="message" style="color: white;">Message:</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+            </div>
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-secondary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 Hope Haven. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="social-media">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>    
+</body>
+</html>
